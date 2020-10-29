@@ -118,7 +118,6 @@ def main():
 
         elif choice == "3":
             #os.system("cls")
-            print("Fine be that way")
             break
 
 main()

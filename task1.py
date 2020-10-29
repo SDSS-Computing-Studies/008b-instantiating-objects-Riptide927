@@ -100,7 +100,7 @@ class vet:
 def main():
     while True:
         #os.system("cls")
-        choice = input("1: Enter a new pet\n2: Retrive a pet\n3: Exit\n")
+        choice = input("1: Enter a new pet\n2: Retrive a pet\n3: Exit\n").strip()
         if choice == "1":
             pets.append( vet() )
             

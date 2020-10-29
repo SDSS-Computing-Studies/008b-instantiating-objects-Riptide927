@@ -83,11 +83,11 @@ class vet:
     birthdate = None
 
     def __init__ (self):
-        self.animal = input("What is your animal? ").strip()
-        self.breed = input("What is your animal's breed? ").strip()
-        self.name = input("What is your pets name? ").strip()
-        self.owner = input("What is your name? ").strip()
-        self.birthdate= input("What is your animals birthdate? ").strip()
+        self.animal = input("What is your animal? ")
+        self.breed = input("What is your animal's breed? ")
+        self.name = input("What is your pets name? ")
+        self.owner = input("What is your name? ")
+        self.birthdate= input("What is your animals birthdate? ")
 
     def display(self):
         print(self.name,self.animal)
@@ -100,22 +100,23 @@ class vet:
 def main():
     while True:
         #os.system("cls")
-        choice = input("1: Enter a new pet\n2: Retrive a pet\n3: Exit\n").strip()
+        choice = input("1: Enter a new pet\n2: Retrive a pet\n3: Exit\n")
         if choice == "1":
             pets.append( vet() )
             
         elif choice == "2":
-            pchoice = input("Name of pet ").strip()
+            pchoice = input("Name of pet ")
 
             for x in range(len(pets)):
+                print (x)
                 if pchoice == pets[x].name:
                     pets[x].display()
-                    input().strip()
 
                 elif len(pets) == 0:
                     print("there are no pets here trying entering in one")
                     break
-        else:
+
+        elif choice == "3":
             #os.system("cls")
             print("Fine be that way")
             break

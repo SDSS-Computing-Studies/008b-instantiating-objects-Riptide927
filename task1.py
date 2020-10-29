@@ -100,11 +100,11 @@ class vet:
 def main():
     while True:
         #os.system("cls")
-        choice = input("1: Enter a new pet\n2: Retrive a pet\n3: Exit:").strip()
-        if choice == "1":
+        choice = int(input("1: Enter a new pet\n2: Retrive a pet\n3: Exit:").strip())
+        if choice == 1:
             pets.append( vet() )
             
-        elif choice == "2":
+        elif choice == 2:
             pchoice = input("Name of pet ")
 
             for x in range(len(pets)):

@@ -116,6 +116,7 @@ def main():
                     print("there are no pets here trying entering in one")
                     break
         else:
+            os.system("cls")
             print("Fine be that way")
             break
 

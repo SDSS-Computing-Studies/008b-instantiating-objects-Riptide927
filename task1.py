@@ -73,7 +73,7 @@ Buster dog
 Shih-tzu is owned by Christy
 (10 points) 
 """
-import os
+#import os
 pets=[]
 class vet:
     animal = None
@@ -99,7 +99,7 @@ class vet:
 
 def main():
     while True:
-        os.system("cls")
+        #os.system("cls")
         choice = input("1: Enter a new pet\n2: Retrive a pet\n3: Exit\n")
         if choice == "1":
             pets.append( vet() )
@@ -116,7 +116,7 @@ def main():
                     print("there are no pets here trying entering in one")
                     break
         else:
-            os.system("cls")
+            #os.system("cls")
             print("Fine be that way")
             break
 
